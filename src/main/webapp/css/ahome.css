@@ -1,0 +1,41 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout{
+	cursor: pointer;
+}
+
+header {
+	height:50px;
+	padding-top:25px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#0c4da2;
+    color:white;
+  }
+
+header nav a {
+    text-decoration: none;
+    color:white;
+    padding-right: 30px;
+  }
+
+ header nav {
+    width: 500px;
+    padding: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color:#0C4DA2;
+  }
+  
+header h2{
+margin-left:20px;
+} 

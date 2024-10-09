@@ -1,0 +1,106 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+#regno{
+	margin:40px auto auto 30px;
+	font-size:25px;
+}
+#title{
+	margin:20px auto 60px auto;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logout{
+	cursor: pointer;
+}
+
+header {
+	height:50px;
+	padding-top:25px;
+    display: flex;
+    justify-content: space-between;
+    background-color:#0c4da2;
+    color:white;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color:white;
+  }
+
+  header nav {
+    width: 400px;
+    padding: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color:#0C4DA2;
+  }
+  
+#header h2{
+	margin-left: 20px;
+} 
+
+#reg{
+	cursor:pointer;
+	padding:8px;
+    background:linear-gradient(20deg,green,greenyellow);
+	color:white;
+	border-radius:10px;
+	transition:.5s ease-out;
+}
+#reg_disabled{
+	padding:8px;
+    background:gray;
+	color:white;	
+	border-radius:10px;
+}
+#reg:hover{
+	border:2px solid green;	
+	color:black;
+	background:rgb(193, 192, 192);
+}
+.jobaction{
+	margin:20px;
+}
+table{
+	box-shadow: 1px 1px 10px gray;
+}
+ table thead{
+	background-color:rgb(37, 150, 190); 
+ }
+table tr th{
+	padding:20px;
+}
+table tbody tr td{
+  padding:20px;
+  max-width:160px;
+  width: fit-content;
+  text-wrap:wrap;
+}
+table caption{
+	font-weight:bold;
+	font-size:20px;
+	margin-bottom:15px;
+}
+
+footer{
+	text-align:center;
+	margin-top:30px;
+}
+footer .img2{
+	margin-top:-35px;
+	padding-right:1.8px;
+}
+
+footer .img3{
+	margin-top:-8px;
+	padding-right:2px;
+}
