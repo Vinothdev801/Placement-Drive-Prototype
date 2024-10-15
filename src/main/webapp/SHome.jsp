@@ -54,6 +54,7 @@ pageEncoding="UTF-8"%>
             <th>Eligibility</th>
             <th>Expected Skills</th>
             <th>Job role</th>
+            <th>Batch</th>
             <th>Package</th>
             <th>Action</th>
           </tr></thead>
@@ -77,6 +78,7 @@ pageEncoding="UTF-8"%>
           		<td><%= rs.getString("eligibility") %></td>
           		<td><%= rs.getString("skill") %></td>
           		<td><%= rs.getString("role") %></td>
+          		<td><%= rs.getString("batch") %></td>
           		<td><%= rs.getString("package") %></td>
           		<td> <form action="fetchStudData" method="post">
               <input type="hidden" name="company_id" value='<%=rs.getInt("cid")%>'/>

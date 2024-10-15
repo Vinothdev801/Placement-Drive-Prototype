@@ -1,4 +1,4 @@
-<%@page import="com.AV.placement.DbConnect"%>
+ <%@page import="com.AV.placement.DbConnect"%>
 <%@page import="java.sql.ResultSet"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
@@ -58,7 +58,7 @@ pageEncoding="UTF-8"%>
         <tbody>
           <%int no=1;
           String search=request.getParameter("search");
-          String query="select regno,name,email from student where regno=625";
+          String query="select regno,name,email from student";
           ResultSet rs=DbConnect.fetchQ(query);
           //out.println("hi "+ rs.getString(1));
           if(rs!=null){
