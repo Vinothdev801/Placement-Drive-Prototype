@@ -18,16 +18,16 @@ public class StudReg extends HttpServlet {
 		PrintWriter out=res.getWriter();
 		
 		String name,regno,email,pass,skill,arrear,course, gender, dob,photo,resume;
-		int mark10th,mark12th,ugcgpa,pgccgpa;
+		float mark10th,mark12th,ugcgpa,pgccgpa;
 		
 		name=req.getParameter("name");
 		regno=req.getParameter("regno");
 		email=req.getParameter("email");
 		pass=req.getParameter("pass");
-		mark10th=Integer.parseInt(req.getParameter("mark10th"));
-		mark12th=Integer.parseInt(req.getParameter("mark12th"));
-		ugcgpa=Integer.parseInt(req.getParameter("ugcgpa"));
-		pgccgpa=Integer.parseInt(req.getParameter("pgcgpa"));
+		mark10th=Float.parseFloat(req.getParameter("mark10th"));
+		mark12th=Float.parseFloat(req.getParameter("mark12th"));
+		ugcgpa=Float.parseFloat(req.getParameter("ugcgpa"));
+		pgccgpa=Float.parseFloat(req.getParameter("pgcgpa"));
 		skill=req.getParameter("skill");
 		arrear=req.getParameter("arrear");
 		course=req.getParameter("course");
@@ -45,10 +45,10 @@ public class StudReg extends HttpServlet {
 			pst.setString(2,name);
 			pst.setString(3,email);
 			pst.setString(4,pass);
-			pst.setInt(5,mark10th);
-			pst.setInt(6,mark12th);
-			pst.setInt(7,ugcgpa);
-			pst.setInt(8,pgccgpa);
+			pst.setFloat(5,mark10th);
+			pst.setFloat(6,mark12th);
+			pst.setFloat(7,ugcgpa);
+			pst.setFloat(8,pgccgpa);
 			pst.setString(9,skill);
 			pst.setString(10,arrear);
 			pst.setString(11,course);

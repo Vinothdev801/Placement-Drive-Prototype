@@ -79,9 +79,25 @@
        position:relative;
        	margin-left:100px;
        	top:-40;
+       	width: 100px;
        }
        #goback a{
        	text-decoration:none;
+       }
+       #submit{
+       	cursor:pointer;
+       	transition: .5s ease;
+       	&:hover{
+       		color:white;
+       		background: black;
+       	}
+       }
+       
+       #msg{
+       position: relative;
+       top:-50;
+       font-size:18px;
+       left: 80;    	
        }
     </style>
 </head>
@@ -113,9 +129,13 @@
                 <label>Hiring package</label>
                 <input type="text" name="package" placeholder="hiring package in LPA" required> 
               
-                <button type="submit">Post Job</button> 
+                <button id="submit" type="submit">Post Job</button> 
                 
-                <p id="msg">
+                
+            </form>
+            <div id="goback"><a href="ahome.jsp">Go back</a></div>
+            
+            <p id="msg">
                 <% 
                 
                 if(request.getAttribute("msg")=="true"){
@@ -131,8 +151,6 @@
                 }
                 
                 %></p>
-            </form>
-            <div id="goback"><a href="ahome.jsp">Go back</a></div>
         </div>
     </div>
 </body>

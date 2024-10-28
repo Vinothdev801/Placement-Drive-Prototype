@@ -65,14 +65,14 @@ pageEncoding="UTF-8"%>
         		String query="SELECT * FROM recruitments";
         		ResultSet rs = DbConnect.fetchQ(query);
         		
-        		 String sql="SELECT * from appliedcompany WHERE regno ="+(String)session.getAttribute("regno");
+        		 String sql="SELECT * from appliedcompany WHERE regno ='"+(String)session.getAttribute("regno")+"'";
         		 ResultSet r =DbConnect.fetchQ(sql);
         		 
         		if(rs!=null){
-        			while(rs!=null){        		
+        			while(rs!=null){       		
           	%>
           	
-          	<tr style="text-align:center;">
+          	<tr style="text-align:center; <% if(i%2==0){%> background: #eceff1;<%}%>">
           		<td><%= i %></td>
           		<td><%= rs.getString("Company_name") %></td>
           		<td><%= rs.getString("eligibility") %></td>

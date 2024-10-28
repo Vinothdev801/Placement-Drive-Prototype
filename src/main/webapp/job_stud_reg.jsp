@@ -1,6 +1,15 @@
 <%@page import="javax.print.attribute.HashPrintRequestAttributeSet"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+ <% //Prevent from browser back button
+
+        response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");//this is for HTTP 1.1 to clear cache.
+        response.setHeader("Pragma","no-cache"); // this for HTTP 1.0 to clear cache. 
+        response.setHeader("Expires", "0"); // this for proxy server to clearcache. 
+
+        if(session.getAttribute("regno")==null){response.sendRedirect("slogin.html"); }
+    %>
 <!DOCTYPE html>
 <html>
 

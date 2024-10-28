@@ -83,7 +83,7 @@
 			</thead> 
 			<tbody>
 			 <%
-		    	String sql="SELECT recruitments.cid, recruitments.company_name, recruitments.role, appliedcompany.cid, appliedcompany.regno  FROM recruitments  LEFT JOIN appliedcompany  ON recruitments.cid = appliedcompany.cid  WHERE appliedcompany.regno ="+(String)session.getAttribute("regno");
+		    	String sql="SELECT recruitments.cid, recruitments.company_name, recruitments.role, appliedcompany.cid, appliedcompany.regno  FROM recruitments  LEFT JOIN appliedcompany  ON recruitments.cid = appliedcompany.cid  WHERE appliedcompany.regno ='"+(String)session.getAttribute("regno")+"'";
 		    	ResultSet rs=null;
 			 	try{
 			 		rs=DbConnect.fetchQ(sql);  

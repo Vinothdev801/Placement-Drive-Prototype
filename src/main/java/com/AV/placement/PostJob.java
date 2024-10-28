@@ -37,7 +37,7 @@ public class PostJob extends HttpServlet{
 			rs = DbConnect.fetchQ(query);
 			while(rs!=null) {
 				
-				if(rs.getString("package").equals(lpa) || rs.getString("role").equals(role)) {
+				if(rs.getString("company_name").equals(name) && (rs.getString("package").equals(lpa) || rs.getString("role").equals(role))) {
 					bool = false;
 				} 
 				

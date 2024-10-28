@@ -28,8 +28,10 @@ public class JobReg extends HttpServlet{
 			pst.setString(2, regno);
 			int row=pst.executeUpdate();
 			
-			if(row>0)
+			if(row>0) {
 				System.out.println(row+" row inserted Successfully...");
+				res.sendRedirect("SHome.jsp");			}
+			
 		} 
 		catch (SQLException e) {
 			e.printStackTrace();

@@ -50,7 +50,7 @@
 		justify-content:space-between;
 		align-items:center;
 		text-align:center;
-		width:650px;
+		width:750px;
 		height:fit-content;
 		border-radius:10px;
 		background-color:whitesmoke;
@@ -69,7 +69,7 @@
 	}
 	table tbody tr td{
 	  padding:10px;
-	  max-width:160px;
+	  max-width:200px;
 	  width: fit-content;
 	  text-wrap:wrap;
 	  color:black;

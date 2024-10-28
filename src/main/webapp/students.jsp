@@ -135,7 +135,7 @@
 	                    	bool=rs.next();
                         }
                         catch(Exception e){
-                            System.out.println("error");
+                            System.out.println("error"+e);
                         }
                         
                     }
