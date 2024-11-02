@@ -15,7 +15,7 @@ public class DbConnect{
 			
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con=DriverManager.getConnection(url,uname,pass);
-			Statement st = con.createStatement();
+			Statement st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			result=st.executeQuery(query);
 	
 			if(con!=null) 

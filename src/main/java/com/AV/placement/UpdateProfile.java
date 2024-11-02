@@ -20,7 +20,7 @@ public class UpdateProfile extends HttpServlet{
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) {
 		
 		HttpSession session= req.getSession();
-		String sql="UPDATE student SET regno=?, name=?, email=?, skills=?, course=?, dob=?, photo=?, resume=? where regno="+session.getAttribute("regno");
+		String sql="UPDATE student SET regno=?, name=?, email=?, skills=?, course=?, dob=?, photo=?, resume=? where regno='"+session.getAttribute("regno")+"'";
 		
 		try(Connection con = DbConnect.connect()){
 			

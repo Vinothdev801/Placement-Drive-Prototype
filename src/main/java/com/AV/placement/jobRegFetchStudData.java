@@ -17,7 +17,7 @@ public class jobRegFetchStudData extends HttpServlet{
 		
 		
 		
-		String query = "select * from student where regno="+sregno;
+		String query = "select * from student where regno='"+sregno+"'";
 		ResultSet rs;
 		try{
 			rs=DbConnect.fetchQ(query);

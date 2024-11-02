@@ -46,6 +46,8 @@
         
             <form action="update" method="post">
             <div class="title"><h2>Profile</h2></div>
+            
+             <%if(session.getAttribute("msg")=="1"){ %> <div class="update"><p> Profile updated successfully.</p></div><%} %>
             <div class="form">
 			
             <div class="label">
@@ -78,7 +80,7 @@
             <%} %></div></div>
             <button type="submit">Update</button>
         </form>
-        <%if(session.getAttribute("msg")=="1"){ %> <p> Profile udated successfully.</p><%} %>
+        
         </div>
     </div>
 </body>
