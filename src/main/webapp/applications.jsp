@@ -17,11 +17,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Applied Students List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body><div class="content">
     <h2>Students applied for placements</h2>
-    <table border="2px" style="border-collapse: collapse;">
+    <table style="border-collapse: collapse;">
         <thead>
             <tr style="text-align: center;">
                 <th>S.no</th>

@@ -16,8 +16,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Post jobs</title>
     <style>
+    	*{
+    		font-family: "Montserrat", sans-serif;
+    	}
         body{
             background-image: url(images/jobpost.png);
             background-size: calc(100vw) calc(100vh);

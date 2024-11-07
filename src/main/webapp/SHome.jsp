@@ -9,6 +9,7 @@
     <!-- <meta http-equiv="refresh" content="9"> -->
     <title>Student Home</title>
     <link rel="stylesheet" href="css/shome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <%
@@ -84,7 +85,7 @@
                             int companyId = rs.getInt("cid");
                             boolean applied = appliedCompanies.contains(companyId);
                             %>
-                            <tr style="text-align:center; <% if (i % 2 == 0) { %> background: #eceff1;<% } %>">
+                            <tr style="text-align:center; <% //if (i % 2 == 0) { %><!--background: #eceff1;  --> <%// } %>">
                                 <td><%= i %></td>
                                 <td><%= rs.getString("Company_name") %></td>
                                 <td><%= rs.getString("eligibility") %></td>

@@ -18,6 +18,7 @@ import com.mysql.cj.Session;
 import com.mysql.cj.conf.url.XDevApiDnsSrvConnectionUrl;
 import com.mysql.cj.exceptions.RSAException;
 
+@SuppressWarnings("serial")
 @WebServlet("/averify")
 public class AdminVerify extends HttpServlet {
 

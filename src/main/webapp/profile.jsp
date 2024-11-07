@@ -38,6 +38,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
 <body>

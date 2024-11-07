@@ -10,7 +10,11 @@
 <meta charset="UTF-8">
 <!-- <meta http-equiv="refresh" content="9"> -->
 <title>My Application</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
+	*{
+		font-family: "Montserrat", sans-serif;
+	}
 	.goback{
 		text-align:center;
 		margin: 30px auto;
