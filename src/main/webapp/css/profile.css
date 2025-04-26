@@ -13,7 +13,6 @@
 }
 
 .container .content {
-
 	margin-top: 20px;
 	width: 550px;
 	height: fit-content;
@@ -29,8 +28,7 @@
 	align-items: center;
 }
 
-.label,
-.input {
+.label, .input {
 	display: flex;
 	flex-direction: column;
 }
@@ -39,16 +37,12 @@
 	margin-left: 20px;
 }
 
-input,
-label,
-select {
+input, label, select {
 	margin-top: 30px;
 	padding: 10px;
-
 }
 
-input,
-select {
+input, select {
 	margin-right: 30px;
 }
 
@@ -56,16 +50,11 @@ button {
 	margin: 15px 225px;
 	padding: 12px 30px;
 	border-radius: 8px;
-	transition: .5s ease-out;
-
-	&:hover {
-		cursor: pointer;
-
-		background: white;
-	}
-
+	transition: .5s ease-out; &: hover { cursor : pointer;
+	background: white;
 }
 
+}
 h2 {
 	text-align: center;
 	padding-top: 10px;

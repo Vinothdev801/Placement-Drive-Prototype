@@ -53,22 +53,19 @@ form .userdetails .inputbox {
 	margin-bottom: 5px;
 }
 
-.userdetails .inputbox input,
-select {
+.userdetails .inputbox input, select {
 	height: 45px;
 	width: 110%;
 	outline: none;
 	border-radius: 5px;
 	border: 1px solid #ccc;
 	padding-left: 10px;
-
 	font-size: 18px;
 	border-bottom-width: 2px;
 }
 
-.userdetails .inputbox input:focus,
-.userdetails .inputbox input,
-select:valid {
+.userdetails .inputbox input:focus, .userdetails .inputbox input, select:valid
+	{
 	border-color: blueviolet;
 }
 

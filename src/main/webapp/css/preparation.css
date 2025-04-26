@@ -9,7 +9,7 @@ body {
 	flex-direction: column;
 	display: flex;
 	justify-content: center;
-	text-align: center;
+	text-align: left;
 	align-items: center;
 	min-height: 100vh;
 	background-color: #f3f4f6;
@@ -53,15 +53,13 @@ body {
 	color: #333;
 }
 
-@media (max-width: 600px) {
+@media ( max-width : 600px) {
 	.about {
 		padding: 15px;
 	}
-
 	.about h1 {
 		font-size: 1.5em;
 	}
-
 	.about h3 {
 		font-size: 1.2em;
 	}
@@ -75,53 +73,57 @@ body {
 #aptitude {
 	position: relative;
 	float: left;
-	width: 90%;
-	max-width: 500px;
+	width: 100%;
+	height: auto;
+	/* max-width: 500px; */
 	padding: 20px;
 	margin: 20px;
-	right: 450px;
+	right: 350px;
 	border-radius: 10px;
 	background-color: #ffffff;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	transition: transform 0.3s;
+	transition: transform 0.5s;
 }
 
 .numerical {
 	position: relative;
 	float: left;
-	right: 450px;
-	top: -200px;
+	right: 350px;
+	top: -240px;
 }
 
 .verbal {
 	position: relative;
-	top: -655px;
-	left: 450px;
+	height: 39rem;
+	top: -68rem;
+	left: 370px;
 	float: right;
-
 }
 
 .topics {
-	width: 200px;
+	height: 200px;
 	position: relative;
-	top: -385px;
-	left: 450px;
+	top: -628px;
+	left: 370px;
 	float: right;
 }
 
-.mainl {
+.subl {
 	padding: 25px;
+	text-wrap: wrap;
 }
 
 #code {
 	text-align: center;
 	position: relative;
-	top: -580px;
+	top: -780px;
 }
 
 .dsa {
 	position: relative;
-	top: -540px;
+	top: -740px;
+	float: left;
+	right: 350px;
 }
 
 header {
@@ -157,9 +159,7 @@ header h1 {
 	background-color: burlywood;
 }
 
-#cards h1,
-#cards h2,
-#cards h3 {
+#cards h1, #cards h2, #cards h3 {
 	color: #333;
 	margin-bottom: 15px;
 }
@@ -171,8 +171,7 @@ header h1 {
 	margin: 10px;
 }
 
-#cards p,
-#cards ul {
+#cards p, #cards ul {
 	color: #666;
 	font-size: 1em;
 	line-height: 1.6;
@@ -188,8 +187,7 @@ header h1 {
 	color: #555;
 }
 
-#aptitude .mainl,
-#aptitude .subl {
+#aptitude .mainl, #aptitude .subl {
 	font-weight: bold;
 	color: #444;
 }

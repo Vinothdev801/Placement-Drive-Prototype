@@ -7,7 +7,6 @@ body {
 	/* background-color:#34495e; */
 	background-image: url(../images/2.jpg);
 	background-size: cover;
-
 }
 
 .box {
@@ -16,7 +15,7 @@ body {
 	position: absolute;
 	top: 20%;
 	Left: 38%;
-	transform: translate(-50%, -5%0);
+	transform: translate(-50%, -5% 0);
 	background: black;
 	text-align: center;
 	border-radius: 10%;
@@ -28,8 +27,7 @@ body {
 	font-weight: 400;
 }
 
-.box input[type="text"],
-.box input[type="password"] {
+.box input[type="text"], .box input[type="password"] {
 	border: 0px;
 	background: none;
 	display: block;
@@ -42,11 +40,9 @@ body {
 	color: white;
 	border-radius: 24px;
 	transition: 0.25s;
-
 }
 
-.box input[type="text"]:focus,
-.box input[type="password"]:focus {
+.box input[type="text"]:focus, .box input[type="password"]:focus {
 	width: 250px;
 	border-color: rgb(11, 226, 33);
 }
@@ -68,9 +64,7 @@ body {
 }
 
 .box input[type="submit"]:hover {
-
 	background-image: linear-gradient(to right, #3498db, rgb(11, 266, 33));
-
 }
 
 a {
@@ -87,7 +81,7 @@ a:hover {
 	border-radius: 20px;
 }
 
-@media (max-width:640px) {
+@media ( max-width :640px) {
 	body {
 		background-repeat: no-repeat;
 		background-color: white;

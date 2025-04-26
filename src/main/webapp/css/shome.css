@@ -2,7 +2,6 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: "Montserrat", sans-serif;
-
 }
 
 #regno {
@@ -19,7 +18,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 
 .logout {
 	cursor: pointer;
@@ -58,7 +56,7 @@ header nav {
 	color: white;
 	border-radius: 10px;
 	transition: .5s ease-out;
-	border-color:whitesmoke;
+	border-color: whitesmoke;
 }
 
 #reg_disabled {
